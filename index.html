@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald|Roboto|Slabo+27px&display=swap" rel="stylesheet">  
+</head>
+<body onload="setTimeout(myFunction, 3000)">
+
+	<div id="loading"></div>
+
+	<div id="popUpMain" style="display:none;">
+		<div id="popup">
+			  <h1 id="welcome">Welcome To <br>Dark Them Website</h1>
+			  <input type="text"  id="emailId" placeholder="Write message"><br>
+			  <button class="btnDesign">Sent message</button>
+			  <button class="btnDesign">No Thanks</button>
+		</div>
+	</div>
+
+	<header>
+
+		<div class="header_menu">
+			<div id="logo">
+				<img src="logo-1-50.jpg">
+				<h4 style="color:#fff;">NAZNIN NAHAR</h4>
+			</div>
+			<div id="menu_list">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Works</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="header_content">
+			<h2>WEB DEVELOPER // Software Engineer</h2>
+			<h1>NAZNIN NAHAR</h1>
+			<button><a href="">Naznin Blog</a></button>
+			<button><a href="">Naznin Blog</a></button>
+		</div>
+		
+	</header>
+
+	<div class="bgLogo"><img src="logo-2C.jpg" alt=""></div>
+
+
+	<footer  style="width:100%; height:90px;background-color: #010101;">
+
+	 <p style="line-height: 100px;color:#fff;text-align: center;">All rights preserved by @naznin nahar2018</p>
+    </footer>
+  
+  <!-- scripts links -->
+
+<script type="text/javascript" src="jquery-3.4.1.js"></script>
+<script type="text/javascript">
+		var preloader=document.getElementById('loading');
+		function	myFunction(){
+		preloader.style.display = 'none';
+		}
+
+		$(document).ready(function(){
+
+			setTimeout(function(){
+
+			$('#popUpMain').css('display','block');},4000);
+
+			}); 
+       
+      $(document).ready(function(){
+
+
+		$('.btnDesign').click(function(){
+			$('#popUpMain').css('display','none');
+
+		});
+
+      });
+		
+</script>
+	
+</body>
+</html>
